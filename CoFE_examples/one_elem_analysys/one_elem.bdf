@@ -1,0 +1,21 @@
+$ Direct Text Input for Bulk Data
+$
+$ Nodes of the Entire Model
+GRID,1,,0,0,0,
+GRID,2,,1,0,0,
+GRID,3,,0,1,0,
+GRID,4,,1,1,0,
+$
+CQUAD4,1,1,1,2,4,3
+$ Material : Material1
+MAT1,1,69000000000,27000000000,0.3,2700                      
+$ Property : Property1
+PSHELL,1,1,0.1,1,1,1 
+$ Imposed Displacement
+SPC1,1,123456,1
+SPC1,1,13456,3
+$ FORCE
+FORCE,1,2,,1000000,1,0,0
+FORCE,1,4,,1000000,1,0,0
+$
+EIGRL   30                      10
